@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<bean id="customer1" class="ques1.spring.assiggnmnet.Customer">
+		<constructor-arg index="0" value="952"></constructor-arg>
+		<constructor-arg index="1" value="Naga"></constructor-arg>
+		<constructor-arg index="2" value="9515962633"></constructor-arg>
+		<constructor-arg index="3" ref="Address1"></constructor-arg>
+	</bean>           
+           
+    <bean id="Address1" class="ques1.spring.assiggnmnet.Address">
+    	<constructor-arg index="0" value="Majestic function hall line"></constructor-arg>
+    	<constructor-arg index="1" value="Kurnool"/>
+    	<constructor-arg index="2" value="AP"/>
+    	<constructor-arg index="3" value="518006"></constructor-arg>
+    	<constructor-arg index="4" value="India"/>
+    </bean>
+</beans>

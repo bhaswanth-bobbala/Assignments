@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<bean id="customer" class="ques1.spring.assiggnmnet.Customer">
+		<property name="customerId" value="952"></property>
+		<property name="customerName" value="Naga"></property>
+		<property name="customerContact" value="9515962633"></property>
+		<property name="customerAddress" ref="Address"></property>
+	</bean>           
+           
+    <bean id="Address" class="ques1.spring.assiggnmnet.Address">
+    	<property name="street" value="Majestic function hall line"></property>
+    	<property name="city" value="Kurnool"/>
+    	<property name="State" value="AP"/>
+    	<property name="Zip" value="518006"></property>
+    	<property name="Country" value="India"/>
+    </bean>
+</beans>

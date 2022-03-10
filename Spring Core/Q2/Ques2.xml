@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="question" class="ques2.spring.assiggnmnet.Question">
+		<constructor-arg value="1"/>
+		<constructor-arg value="Mention any Wild Animal?"/>
+		<constructor-arg>
+		<list>
+			<value>Lion</value>
+			<value>Tiger</value>
+			<value>Bull</value>
+			<value>Hippo</value>
+			<value>Bear</value>
+		</list>
+		</constructor-arg>
+	</bean>
+	
+	<!-- <bean id="question" class="ques2.spring.assiggnmnet.Question">
+		<constructor-arg value="1"/>
+		<constructor-arg value="Mention 5 Wild Animals?"/>
+		<constructor-arg>
+		<set>
+			<value>Lion</value>
+			<value>Tiger</value>
+			<value>Bull</value>
+			<value>Hippo</value>
+			<value>Bear</value>
+		</set>
+		</constructor-arg>
+	</bean> -->
+	
+	<!-- <bean id="question" class="ques2.spring.assiggnmnet.Question">
+		<constructor-arg value="1"/>
+		<constructor-arg value="Mention 5 Wild Animals?"/>
+		<constructor-arg>
+		<map>
+			<entry key="1" value="Lion"/>
+			<entry key="2" value="Tiger"/>
+			<entry key="3" value="Bull"/>
+			<entry key="4" value="Hippo"/>
+			<entry key="5" value="Bear"/>
+		</map>
+		</constructor-arg>
+	</bean> -->
+           
+</beans>
