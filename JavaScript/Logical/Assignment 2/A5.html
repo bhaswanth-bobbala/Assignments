@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset=utf-8 /> 
+<title>JS Assignment 2</title> 
+</head>
+<body> 
+    <form id="form">
+        <label for="name">Name:</label>
+        <input id="name" placeholder="name"/>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" placeholder="abc@emaple.com"/>
+        <p>Toppings:</p>
+        <label for="Extra Cheese">Extra Cheese:</label>
+        <input class="checkbox" value="Extra Cheese" type="checkbox" id="Extra Cheese"/>
+        <label for="pepperoni">Pepperoni:</label>
+        <input class="checkbox" value="pepperoni" type="checkbox" id="pepperoni"/>
+        <label for="olives">Olives:</label>
+        <input class="checkbox" value="olives" type="checkbox" id="olives"/>
+        <label for="pepper">Pepper:</label>
+        <input class="checkbox" value="Pepper" type="checkbox" id="pepper"/>
+        <label for="Bacon">Bacon:</label>
+        <input class="checkbox" value="Bacon" type="checkbox" id="Bacon"/>
+        <label for="tomatoes">Tomatoes:</label>
+        <input class="checkbox" value="tomatoes" type="checkbox" id="tomatoes"/>
+        <label for="Mushrooms">Mushrooms:</label>
+        <input class="checkbox" value="Mushrooms" type="checkbox" id="Mushrooms"/>
+        <p>How do you want to get your pizza!
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="delivery" name="Dtype"/>
+        <label for="pickup">Pickup</label>
+            <input type="radio" id="pickup" name="Dtype"/></p>
+        <p>Tip?
+        <select>
+            <option value="0">select</option>
+            <option value="1">10%</option>
+            <option value="2">20%</option>
+            <option value="3">25%</option>
+        </select></p>
+        <hr>
+        <p>Address</p>
+        <textarea placeholder="address...." style="height: 100px;width: 500px;" cols="1" rows="1"></textarea>
+        <p>
+            <input type="submit" value="submit" class="submit"/>
+            <input type="button" value="reset" class="reset"/>
+            <input type="button" value="show summary" class="show"/>
+        </p>
+    </form>
+    <table class="table">
+        <tr>
+            <td>Name:</td>
+            <td class="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td class="email"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td class="address"></td>
+        </tr>
+        <tr>
+            <td>Toppings:</td>
+        </tr>
+        <tr>
+            <td>Delivery:</td>
+            <td class="deli"></td>
+        </tr>
+        <tr>
+            <td>Tip amount:</td>
+            <td class="tip"></td>
+        </tr>
+        <tr>
+            <td>Total:</td>
+            <td class="sum"></td>
+        </tr>
+    </table>
+    
+    
+    
+    <script type="module" src="A5.js" ></script>
+</body>
+</html>
